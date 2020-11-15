@@ -1,0 +1,144 @@
+/*
+FONTE SERA USADA NAS PAGINAS (IMPORTAÇÃO)
+
+Para adicionar em um texto basta por no elemento:
+font-family: 'Poppins', sans-serif; 
+*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,700;0,800;1,200;1,400;1,700;1,800&display=swap');
+/*=========================================================================================================================*/
+
+h1, h2, h3, h4, h5, h6, p{
+  margin: 0;
+}
+
+
+.view_page{
+  display: flex;
+  background-color: #ffffff;
+}
+
+.view_container{
+  display: flex;
+  gap: 30px;
+}
+
+.view_small_container{
+  display: flex;
+  flex-flow: column;
+  gap: 20px;
+}
+
+.view_small{
+  width: 110px;
+  height: 110px;
+  border-radius: 5px;
+  object-fit: cover;
+  grid-area: S;
+}
+
+.view_grand{
+  width: 500px;
+  height: 500px;
+  border-radius: 5px;
+  object-fit: cover;
+  grid-area: S;
+}
+
+.spec_container{
+  margin: 0 0 0 50px;
+}
+
+.spec_titulo{
+  font-size: 40px;
+}
+
+.spec_icone{
+  height: 50%;
+  margin: 0 5px 0 5px;
+}
+
+.spec_button{
+  background-color: #fff;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid rgb(73, 73, 73);
+  outline: none;
+  margin: 10px 10px 20px 0;
+  
+}
+
+.spec_button:hover{
+  background-color: #eee;
+  border: 1px solid #333;
+}
+
+.produto_valor{
+  font-size: 60px;
+  color: #35b0a0;
+  margin: 0 0 20px 0;
+}
+
+.spec_parcelamento{
+  font-size: 14px;
+  margin: 0 0 20px 0;
+}
+
+#ProdutoQtd{
+  font-weight: bolder;
+  font-size: 20px;
+  text-align: center;
+  width: 14%;
+  height: 8%;
+  border: 1px solid #35b0a0;
+  border-radius: 5px;
+  margin: 0 0 20px 0;
+}
+
+#comprar{
+  background-color: #7371ff;
+  background: linear-gradient(62deg, #7371ff 0%, #b367ff 100%);
+  color: #fff;
+  outline: none;
+  border: .5px solid #4822a2;
+  border-radius: 5px;
+  height: 10%;
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+#comprar:hover{
+  background: linear-gradient(62deg, #b367ff 0%, #7371ff 100%);
+}
+
+.spec_icone_sacola{
+  height: 50%;
+  margin: 0 15px 0 0;
+}
+
+.recomendacoes{
+  padding: 50px;
+}
+
+.desc_container{
+  border-radius: 5px;
+  margin-left: 20px;
+  background: #e6e6e6;
+  padding: 30px;
+  max-width: 400px;
+}
+
+@media (max-width: 1680px) {
+  .view_page{
+    display: flex;
+    flex-flow: wrap;
+  }
+
+  .desc_container{
+    border-radius: 5px;
+    margin: 30px 0 0 0;
+    background: #e6e6e6;
+    padding: 30px;
+    max-width: 80%;
+  }
+  
+}

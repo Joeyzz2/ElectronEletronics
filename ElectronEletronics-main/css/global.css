@@ -1,0 +1,407 @@
+/*
+FONTE SERA USADA NAS PAGINAS (IMPORTAÇÃO)
+
+Para adicionar em um texto basta por no elemento:
+font-family: 'Poppins', sans-serif; 
+*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,700;0,800;1,200;1,400;1,700;1,800&display=swap');
+/*=========================================================================================================================*/
+
+/*CONFIGURAÇÕES GLOBAIS===================================*/
+body{
+ background-color: #e6e6e6;
+  font-family: 'Poppins', sans-serif; 
+  box-sizing: border-box;
+  margin: 0;
+  padding:0;
+  color: #333333;
+}
+
+h1, h2, h3, h4, h5, h6, p{
+  margin: 0;
+}
+
+h1{
+  font-size: 40px;
+  color: #2b2926;
+}
+
+a{
+  color: #fff;
+  text-decoration: none;
+}
+a:hover{
+  color: #222;
+  text-decoration: none;
+}
+
+.produto_page{
+  border-top: 1px solid rgb(202, 202, 202);
+  background-color: #ffffff;
+  padding: 30px 0 50px 50px;
+}
+
+.texto_navegação{
+  color: #888;
+  font-weight: normal;
+  margin: 0 0 30px 0;
+}
+
+.texto_navegação{
+  color: #888;
+  font-weight: normal;
+  margin: 0 0 30px 0;
+}
+
+.topico_box{
+  margin-bottom: 50px;
+}
+
+.topico_titulo{
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+
+.topico_quadrado{
+  align-items: inherit;
+  background: linear-gradient(62deg, #7371ff 0%, #b367ff 100%);
+  width: 25px;
+  height: 25px;
+  margin: 0 10px 0 5px;
+}
+
+.recomendacoes{
+  padding: 50px;
+}
+
+.topico{
+  margin: 0;
+}
+
+.subtopico{
+  margin: 0 0 0 41px;
+  font-weight: normal;  
+}
+
+.produtos_container{
+  display: flex;
+  justify-content: center;
+  flex-flow: wrap;
+  gap: 30px;
+  text-align: center;
+}
+
+.vitrine_box{
+  background: #fff;
+  width: 200px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, .1);
+}
+
+.vitrine_box_full{
+  display: flex;
+}
+
+.vitrine_box_full:hover{
+  -moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+  transform: scale(1.06);
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, .05);
+  transition: .2s;
+}
+
+.vitrine_box:hover{
+  -moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.06);
+  background: #fff;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, .05);
+  transition: .2s;
+}
+
+.vitrine_box_promo{
+  background: #fff;
+  width: 200px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, .1);
+  border: 2px solid #f0423d;
+  color: #f0423d;
+}
+
+.vitrine_box_frete{
+  background: #fff;
+  width: 200px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, .1);
+  border: 2px solid #35b0a0;
+  color: #35b0a0;
+}
+
+.promo_selo_promo{
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 12px;
+  width: 60px;
+  height: 60px;
+  background-image: url('../imagens/promo1.png');
+  background-position: center;
+  background-size: 100%;
+  z-index: 10;
+  position: absolute;
+  margin: -20px 0 0 160px;
+}
+
+.promo_selo_frete{
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 12px;
+  width: 60px;
+  height: 60px;
+  background-image: url('../imagens/promo2.png');
+  background-position: center;
+  background-size: 100%;
+  z-index: 10;
+  position: absolute;
+  margin: -20px 0 0 160px;
+}
+
+
+.promo_selo img{
+  width: 100%;
+}
+
+.vitrine_image{
+  background-image: url('../imagens/xiaomi_mi_a3_mi_a3_lite_smartphone_android_one.jpg');
+  background-position: center;
+  background-size: 405px;
+  width: 200px;
+  height: 200px;
+  border-radius: 5px 5px 0 0;
+}
+
+.vitrine{
+  text-align: center;
+  border-radius: 0 0 5px 5px;
+  padding: 25px 0 25px 0;
+}
+
+.vitrine_descrição{
+  font-size: 13px;
+  margin: 5px 0 15px 0;
+  color: #000;
+}
+
+.vitrine_titulo{
+  color: #35b0a0;
+}
+
+.vitrine_preço{
+  color: #4822a9;
+}
+
+/*============================================*/
+
+/*CABEÇALHO===================================*/
+.cabecalho_box{
+  display: flex;
+  justify-content: space-between;
+  flex-flow: wrap;
+  padding: 25px 50px 20px 50px;
+}
+
+.logo{
+  height: 45px;
+}
+
+.search_box{
+  display: flex;
+}
+
+#search{
+  background: url('../imagens/lupa.png') no-repeat 8px 6px;
+  background-size: 20px;
+  text-align: center;
+  outline: none;
+  width: 400px;
+  height: 40px;
+  border: 3px solid #4822a9;
+  border-radius: 100px;
+  color: #555;
+  font-weight: bolder;
+  font-size: 17px;
+  padding: 10px 8px 10px 40px;
+  margin-right: 15px;
+}
+
+.carrinho{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #4822a9;
+  border-radius: 100px;
+  width: 40px;
+  height: 40px;
+  margin-left: 10px;
+  position: fixed;
+  right: 14px;
+  top: 25px;
+  border: 1px solid #e6e6e6;
+  z-index: 1000;
+}
+
+img.sacola{
+  width: 60%;
+  height: 60%;
+}
+/*============================================*/
+
+/*CATEGORIAS / MENU==================================*/
+.menu_box{
+  display: flex;
+  justify-content: center;
+  height: 54px;
+  border-top: 1px solid rgb(187, 187, 187);
+}
+
+.categorias{
+  display: flex;
+  list-style: none;
+}
+
+.menu_option_active{
+  color: #4822a2;
+  padding:  0 15px 35px 15px;
+  margin-left: 25px;
+  font-weight: bolder;
+  text-decoration: none;
+  border-bottom: 7px solid #35b0a0;
+  z-index: 10;
+}
+
+.menu_option_active:hover{
+  color: #7171ff;
+  padding:  0 15px 35px 15px;
+  margin-left: 25px;
+  font-weight: bolder;
+  text-decoration: none;
+  border-bottom: 7px solid #35b0a0;
+}
+
+.menu_option{
+  color: #222;
+  padding:  0 15px 35px 15px;
+  margin-left: 25px;
+  font-weight: bolder;
+  text-decoration: none;
+  z-index: 10;
+}
+
+.menu_option:hover{
+  color: #4822a2;
+  border-bottom: 7px solid #35b0a0;
+}
+/*============================================*/
+
+
+/*RODAPÉ======================================*/
+.rodape_box{
+  background-color: #7371ff;
+  background: linear-gradient(62deg, #7371ff 0%, #b367ff 100%);
+  padding: 60px 50px 50px 50px;
+  color: #fff;
+}
+
+.rodape{
+  display: flex;
+  justify-content: space-between;
+}
+
+.box_infor{
+  margin-left: 70px;
+}
+
+img.mercado_pago{
+  width: 400px;
+}
+
+.social_icones{
+  width: 50px;
+  padding-left: 5px;
+}
+
+.copy{
+  text-align: center;
+  font-style: italic;
+}
+/*============================================*/
+
+@media (max-width: 520px) {
+ 
+  .search_box{
+    margin-top: 20px;
+  }
+
+  .carrinho{
+    right: 14px;
+    top: 595px;
+  }
+
+  .menu_box{
+    height: auto;
+  }
+
+  .categorias{
+    display: flex;
+    flex-flow: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+
+  .menu_option{
+    display: flex;
+    align-items: center;
+    margin: 0;
+    height: 10px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 100px;
+  }
+
+  .menu_option:hover{
+    color: #4822a2;
+    border: 2px solid #4822a2;
+  }
+
+  .menu_option_active{
+    display: flex;
+    align-items: center;
+    height: 10px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 100px;
+    border: 2px solid #4822a2;
+  }
+
+  .menu_option_active:hover{
+    display: flex;
+    align-items: center;
+    height: 10px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 100px;
+    color: #4822a2;
+    border: 2px solid #4822a2;
+  }
+  
+}

@@ -1,0 +1,39 @@
+/*
+FONTE SERA USADA NAS PAGINAS (IMPORTAÇÃO)
+
+Para adicionar em um texto basta por no elemento:
+font-family: 'Poppins', sans-serif; 
+*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,700;0,800;1,200;1,400;1,700;1,800&display=swap');
+/*=========================================================================================================================*/
+
+.pag_principal{
+  padding: 50px;
+}
+
+
+.banner_slide{
+  width: 100%;
+  max-width: 100%;
+  height: 25vw;
+  max-height:500px;
+
+  position: relative;
+}
+
+.banner_slide img{
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 800ms;
+}
+
+img.banner_selected{
+  opacity: 1;
+}
+
+.pag_principal{
+  padding: 50px;
+}

@@ -1,0 +1,61 @@
+/*
+FONTE SERA USADA NAS PAGINAS (IMPORTAÇÃO)
+
+Para adicionar em um texto basta por no elemento:
+font-family: 'Poppins', sans-serif; 
+*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,700;0,800;1,200;1,400;1,700;1,800&display=swap');
+/*=========================================================================================================================*/
+
+.vitrine_box_destaque{
+  background: #fff;
+  width: 320px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, .1);
+  border: 4px solid #4822a9;
+  color: #4822a9;
+  font-size: 30px;
+}
+
+.promo_selo_destaque{
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 19px;
+  width: 100px;
+  height: 100px;
+  background-image: url('../imagens/promo3.png');
+  background-position: center;
+  background-size: 100%;
+  z-index: 10;
+  position: absolute;
+  margin: -30px 0 0 245px;
+}
+
+.vitrine_image_destaque{
+  background-image: url('../imagens/xiaomi_mi_a3_mi_a3_lite_smartphone_android_one.jpg');
+  background-position: center;
+  background-size: 650px;
+  width: 100%;
+  height: 310px;
+  border-radius: 5px 5px 0 0;
+}
+
+
+
+@media (max-width: 1680px) {
+
+  .produtos_container{
+    display: flex;
+    justify-content: left;
+  }
+  
+  .vitrine_box_destaque{
+    width: 300px;
+  }
+
+}
